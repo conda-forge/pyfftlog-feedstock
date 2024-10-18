@@ -1,5 +1,5 @@
 {% set name = "pyfftlog" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b299e45be2e25c1facc2aa67b6895ec658e7083b098fe4fd9d81b92884d39b3
+  sha256: 00811ee6be5b59c7da4fce31292ab308a992d6e4455fbe33a05112a3e66211c9
 
 build:
   noarch: python
