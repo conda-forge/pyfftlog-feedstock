@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pyfftlog" %}
 {% set version = "0.2.1" %}
 
@@ -6,26 +7,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 00811ee6be5b59c7da4fce31292ab308a992d6e4455fbe33a05112a3e66211c9
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy
     - scipy >=1.10
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyfftlog
 
