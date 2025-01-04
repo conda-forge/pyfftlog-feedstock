@@ -3,19 +3,19 @@ About pyfftlog-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyfftlog-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/prisae/pyfftlog
+Home: https://github.com/emsig/pyfftlog
 
 Package license: CC0-1.0
 
 Summary: Logarithmic Fast Fourier Transform
 
-Development: https://github.com/prisae/pyfftlog
+Development: https://github.com/emsig/pyfftlog
 
 Documentation: https://pyfftlog.readthedocs.io/
 
 A pure python implementation of the logarithmic FFT code FFTLog
 as presented in Appendix B of Hamilton (2000) and published at
-casa.colorado.edu/~ajsh/FFTLog.
+jila.colorado.edu/~ajsh/FFTLog.
 
 
 Current build status
